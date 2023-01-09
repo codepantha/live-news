@@ -16,7 +16,6 @@ const ReadMoreButton = ({ article }: Props) => {
       .join('&');
 
     const url = `/article?${queryString}`;
-    console.log(url);
     router.push(url);
   };
 
