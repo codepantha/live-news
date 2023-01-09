@@ -74,5 +74,3 @@ const fetchNews = async (
 };
 
 export default fetchNews;
-
-// stepzen import curl "http://api.mediastack.com/v1/news?access_key=1dcc5454337463e9828b8e7e789102cd&sources=cnn,bbc"
