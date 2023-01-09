@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import LiveTimestamp from './LiveTimestamp';
 import ReadMoreButton from './ReadMoreButton';
 
 type Props = {
@@ -10,7 +11,7 @@ const Article = ({ article }: Props) => {
   return (
     <article
       className="bg-slate-100 dark:bg-slate-800 flex
-      flex-col rounded-lg shadow-sm hover:scale-105 hover:shadow-lg
+      flex-col rounded-lg shadow-lg hover:scale-105 hover:shadow-xl
       hover:bg-slate-200 transition-all duration-200 ease-out"
     >
       {article.image ? (
@@ -42,7 +43,9 @@ const Article = ({ article }: Props) => {
             pt-5 static text-gray-400"
           >
             <p>{article.source}</p>
-            <p>{article.published_at}</p>
+            <p>
+              <LiveTimestamp time={article.published_at} />
+            </p>
           </footer>
         </div>
       </div>

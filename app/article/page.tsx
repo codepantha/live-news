@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { notFound } from 'next/navigation';
+import LiveTimestamp from '../LiveTimestamp';
 
 type Props = {
   searchParams?: Article;
@@ -35,7 +36,7 @@ const ArticlePage = ({ searchParams }: Props) => {
           <div className="flex divide-x-2 space-x-4">
             <h2 className="font-bold">By: {article.author || 'Unknown Author'}</h2>
             <h2 className="font-bold pl-4">Source: {article.source}</h2>
-            <p className="pl-4">{article.published_at}</p>
+            <p className="pl-4"><LiveTimestamp time={article.published_at} /></p>
           </div>
 
           <p className="pt-4">{article.description}</p>
