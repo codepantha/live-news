@@ -29,6 +29,14 @@
 # <h1 id="about-project">📖 LIVE NEWS APP</h1>
 
 > This is a live news app that brings the latest breaking news from around the world to your fingertips. It was built using the latest technologies like Next.js, TypeScript, Tailwind and Stepzen. There is also a dark mode for the cool guys 😎
+<table>
+  <th>Homepage Desktop View</th>
+  <th>Homepage Mobile View</th>
+  <tr>
+    <td><img src="./public/homepage-dark-desktop.png"  alt="1" width = 650px height = 280px ></td>
+    <td><img src="./public/homepage-dark-mobile.png" alt="3" width = 375px height = 576px ></td>
+   </tr> 
+</table>
 
 ## 🛠 Built With <a id="built-with"></a>
 
